@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "scripts": {
+    "docs:install": "test -z \"${ACTIONS_ID_TOKEN_REQUEST_URL+x}${ACTIONS_ID_TOKEN_REQUEST_TOKEN+x}\"",
+    "openapi:lint": ":",
+    "docs:build": "mkdir -p dist && mkdir dist/docs && printf %s 'Pages test OK' > dist/docs/index.html"
+  }
+}
